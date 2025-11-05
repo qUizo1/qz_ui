@@ -1,6 +1,5 @@
 # qUizo UI
 
-A comprehensive, modern HUD system designed for FiveM servers using the vRP framework. This script provides a complete user interface solution with GPS, notifications, progress bars, admin announcements, and vehicle information.
 
 ## Features
 
@@ -13,6 +12,12 @@ A comprehensive, modern HUD system designed for FiveM servers using the vRP fram
 - Real-time health, armor, hunger, and thirst display
 - Dynamic stamina tracking during sprinting
 - Color-coded indicators for easy status monitoring
+
+### 💰 Money HUD
+- Real-time wallet balance display
+- Toggle with /hud command
+- Automatic hide after 5 seconds
+- Clean, minimalistic design
 
 ### 🔔 Notification System
 - Customizable duration
@@ -52,6 +57,11 @@ A comprehensive, modern HUD system designed for FiveM servers using the vRP fram
 ![HUD](ss/hud_notifications.png)
 
 *Complete HUD showing health, armor, hunger, thirst, stamina, and notification system*
+
+### Money HUD
+![Money HUD](ss/money-hud.png)
+
+*Real-time wallet balance display with toggle functionality*
 
 ### Text UI & Progress Bar
 ![TextUI](ss/textui_progressbar.png)
@@ -164,6 +174,7 @@ TriggerClientEvent("hud:admin", -1, "TITLE", "Message", 10000)
 - `/testprogress` - Test progress bar
 - `/anunt` - Test admin announcement
 - `/setfuel` - Test the fuel system for the speedometer
+- `/hud` - Toggle money HUD display
 
 ## Dependencies
 
