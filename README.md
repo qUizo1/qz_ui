@@ -3,6 +3,12 @@
 
 ## Features
 
+### ⚙️ Settings System
+- Toggle HUD elements on/off (Survival HUD, Location, Speedometer)
+- Real-time UI visibility control
+- Accessible via /settings command
+- And more coming soon
+
 ### 🗺️ GPS System
 - Real-time street and zone display
 - Automatic location updates
@@ -82,6 +88,9 @@
 ![Max Speed](ss/max_speed.png)
 
 *Speedometer at maximum velocity with color changes*
+
+### Settings
+![Settings](ss/settings.png)
 
 ## Installation
 
@@ -169,6 +178,7 @@ TriggerClientEvent("hud:admin", -1, "TITLE", "Message", 10000)
 ```
 
 ### Commands
+- `/settings` - Open HUD settings menu
 - `/testnoti` - Test notifications
 - `/testtui` - Test text UI
 - `/testprogress` - Test progress bar
