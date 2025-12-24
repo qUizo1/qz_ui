@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/speedometer.css">
     <link rel="stylesheet" href="css/progressbar.css">
     <link rel="stylesheet" href="css/money-hud.css">
+    <link rel="stylesheet" href="css/settings.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
@@ -145,6 +146,31 @@
         </div>
     </div>
 
+    <div id="settings-container" class="hidden">
+        <div class="settings-box">
+            <div class="settings-header">
+                <h2>HUD SETTINGS</h2>
+            </div>
+            <div class="settings-content">
+                <div class="setting-item">
+                    <span class="setting-title">Survival Hud</span>
+                    <button class="on">ON</button>
+                    <button class="off">OFF</button>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-title">Location</span>
+                    <button class="on">ON</button>
+                    <button class="off">OFF</button>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-title">Speedometer</span>
+                    <button class="on">ON</button>
+                    <button class="off">OFF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/textui.js" type="text/javascript"></script>
     <script src="js/notify.js" type="text/javascript"></script>
@@ -153,11 +179,14 @@
     <script src="js/anunt.js" type="text/javascript"></script>
     <script src="js/progressbar.js" type="text/javascript"></script>
     <script src="js/money-hud.js" type="text/javascript"></script>
+    <script src="js/settings.js" type="text/javascript"></script>
 
 
     <script src="nui://game/ui/jquery.js" type="e134fe50da9f0971581b86ea-text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2" type="e134fe50da9f0971581b86ea-text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="e134fe50da9f0971581b86ea-text/javascript"></script>
+    <script src='app.js' type="e134fe50da9f0971581b86ea-text/javascript" defer></script>
+    <script type="e134fe50da9f0971581b86ea-module" src="nui://render/script.js"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e134fe50da9f0971581b86ea-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'999cade99998e00a',t:'MTc2MjM0OTE0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
-
 </html>

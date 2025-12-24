@@ -276,6 +276,19 @@ RegisterCommand("hud", function()
   end
 end)
 
+
+RegisterNUICallback('hideSettings', function(data, cb)
+    SetNuiFocus(false, false)
+    cb('ok')
+end)
+
+RegisterCommand("settings", function()
+    SendNUIMessage({
+        action = 'showSettings'
+    })
+    SetNuiFocus(true, true)
+end, false)
+
 ----------------------------------COMMANDS FOR TESTING PURPOSES----------------------------------
 
 RegisterCommand("testnoti", function()
@@ -327,6 +340,7 @@ end, false)
 RegisterCommand("testprogress", function(source, args, raw)
     TriggerEvent("progressBar:start", "Test Progress Bar", 5000)
 end, false)
+
 
 
 vRP:registerExtension(QZUI)       
